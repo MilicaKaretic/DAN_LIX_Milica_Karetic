@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAN_LIX_Milica_Karetic.Models;
+using System;
 
 namespace DAN_LIX_Milica_Karetic.ViewModels
 {
@@ -48,7 +49,7 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
             // Loads the timer
             Timer = new TimerViewModel(new TimeSpan(0, 0, 1));
             // Loads the game information
-            GameInfo = new GameInfoViewModel();     
+            GameInfo = new GameInfoViewModel();
             GameInfo.ClearInfo();
 
             // Get the images from the image folder then display to be memorized
@@ -92,10 +93,12 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
         /// </summary>
         private void GameStatus()
         {
-            // If all slides were selected, stop the game
+            // If all slides were selected, stop the game and save to file
             if (Slides.AllSlidesMatched)
             {
                 GameInfo.GameStatus(true);
+                MemoryFile mf = new MemoryFile();
+                mf.WriteToFile(Timer.Time);
                 Timer.Stop();
             }
         }

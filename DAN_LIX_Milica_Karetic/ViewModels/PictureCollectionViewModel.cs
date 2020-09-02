@@ -37,7 +37,7 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
         /// <summary>
         /// Peek time to spend
         /// </summary>
-        private const int peekSeconds = 3;
+        private const int peekSeconds = 1;
         /// <summary>
         /// Open time to spend
         /// </summary>
