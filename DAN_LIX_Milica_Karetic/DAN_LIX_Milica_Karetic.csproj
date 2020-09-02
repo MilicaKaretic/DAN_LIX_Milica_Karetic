@@ -102,9 +102,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\Pictures\memory_image.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\Pictures\letter_A.jpg" />
     <Resource Include="Assets\Pictures\letter_E.jpg" />
     <Resource Include="Assets\Pictures\letter_K.jpg" />
@@ -115,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\Pictures\letter_F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Pictures\memory_image.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

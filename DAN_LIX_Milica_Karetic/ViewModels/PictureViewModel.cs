@@ -25,6 +25,7 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
         private bool isFailed;
         #endregion
 
+        
         #region Constructor
         /// <summary>
         /// Picture constructor
