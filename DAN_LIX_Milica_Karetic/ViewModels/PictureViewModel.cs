@@ -53,6 +53,8 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
                 isViewed = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
+
             }
         }
 
@@ -70,6 +72,8 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
                 isMatched = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
+
             }
         }
 
@@ -87,6 +91,7 @@ namespace DAN_LIX_Milica_Karetic.ViewModels
                 isFailed = value;
                 OnPropertyChanged("SlideImage");
                 OnPropertyChanged("BorderBrush");
+                OnPropertyChanged("IsSelectable");
             }
         }
 
